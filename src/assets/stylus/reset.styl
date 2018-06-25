@@ -1,0 +1,218 @@
+@charset "utf-8";
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  font-style: inherit;
+  font-size: 100%
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: Arial, "Microsoft Yahei", "Helvetica Neue",'miui', Helvetica, sans-serif;
+  line-height: 1
+}
+
+li {
+  list-style: none
+}
+h1,h2,h3,h4,h5,h6,b,strong{font-weight:normal}
+address,cite,dfn,em,i,optgroup,var{font-style:normal}
+img,object,input,textarea,button,select{vertical-align:middle}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+textarea{overflow:auto;resize:vertical}
+
+
+button[disabled], html input[disabled] {
+  cursor: default
+}
+
+img {
+  border: 0;
+  vertical-align: middle
+}
+button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}
+button, input, select, textarea {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: inherit
+}
+
+button, input {
+  line-height: normal
+}
+
+button, select {
+  text-transform: none
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  cursor: pointer;
+  -webkit-appearance: button
+}
+
+input[type=search] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0
+}
+
+[hidden], template {
+  display: none
+}
+
+dfn {
+  font-style: italic
+}
+sup,sub{vertical-align:baseline}
+code, kbd, pre, samp {
+  font-size: 1em;
+  font-family: monospace, serif
+}
+
+blockquote, q {
+  quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse
+}
+
+
+
+
+html {
+  overflow-x: hidden;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  color: #2b577a;
+  font-size:14px;
+  font-family: -apple-system, Helvetica, 'Hiragino Sans GB W3', arial, sans-serif;
+  -webkit-user-select: none;
+  min-height: 100vh;
+}
+
+
+a:active {outline: 0}
+a {color: #212121;text-decoration: none;}
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: ""
+}
+
+.clearfix:after {
+  clear: both
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto
+}
+
+.fr {
+  float: right !important
+}
+
+.fl {
+  float: left !important
+}
+
+.hide, .hidden {
+  display: none !important
+}
+
+.show {
+  display: block !important
+}
+
+.visible {
+  visibility: visible
+}
+
+.invisible {
+  visibility: hidden
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.lineclamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+  overflow: hidden
+}
+//* { touch-action: none; }
+/*
+bug
+Unable to preventDefault inside passive event listener
+注册处理函数时，用如下方式，明确声明为不是被动的
+window.addEventListener('touchmove', func, { passive: false })
+应用 CSS 属性 touch-action: none; 这样任何触摸事件都不会产生默认行为，但是 touch 事件照样触发。
+*/
+body {
+  background-color: #f6f6f6;
+  min-height: 100%;
+}
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  content: normal !important;
+}
+[aspectratio] {
+  position: relative;
+}
+[aspectratio]::before {
+  content: '';
+  display: block;
+  width: 100%;
+  margin-left: -1px;
+  height: 0;
+}
+[aspectratio-content] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+[flexContainer] {
+  display: flex;
+  width: 750px;
+}
